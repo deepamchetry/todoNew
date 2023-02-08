@@ -36,7 +36,7 @@ export default function Inbox({ list, append, remove }) {
 
     return (
         <div>
-            <h2>Inbox</h2>
+            <h1>INBOX</h1>
             {!newTask && (
                 <button onClick={newTaskHandler} className={styles.btn}>+ Add New</button>
             )}

@@ -12,6 +12,7 @@ export default function Next7Days({ list, remove }) {
     })
     return (
         <div>
+            <h1>NEXT 7 DAYS</h1>
             <ListRender filteredList={filteredList} remove={remove} />
             {/* {console.log(filteredList)} */}
         </div>

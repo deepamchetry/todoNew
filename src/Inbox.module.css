@@ -1,5 +1,5 @@
 .btn {
-	background-color: #913175;
+	background-color: #347f8e;
 	color: #e9e8e8;
 	border: none;
 	padding: 0.5rem 1rem;
@@ -18,11 +18,14 @@
 	transition: 0.3s;
 	margin: 1rem;
 	margin-left: 0;
-	border: 1px solid #913175;
+	border: 1px solid #347f8e;
 }
-.btn:hover,
+.btn:hover {
+	background-color: #47933d;
+	transform: translateY(-2px);
+}
 .btnCancel:hover {
-	background-color: #cd5888;
+	background-color: #ff0000;
 	transform: translateY(-2px);
 }
 
@@ -34,7 +37,7 @@ input {
 }
 
 input:focus {
-	border-color: #913175;
+	border-color: #34758e;
 }
 
 .todoContainer {
@@ -54,5 +57,5 @@ input:focus {
 
 .todoItem:hover {
 	transform: translateY(-5px);
-	box-shadow: 0 5px 5px #e9e8e8aa;
+	box-shadow: 0 5px 5px #347f8e;
 }

@@ -1,6 +1,6 @@
 ul {
 	list-style-type: none;
-	border: 2px solid #913175;
+	border: 2px solid #318791;
 	border-radius: 1rem;
 	padding: 0.5rem;
 }
@@ -14,11 +14,11 @@ li {
 }
 
 li:hover {
-	border-color: #cd5888;
+	border-color: #347f8e;
 }
 
 .active {
-	background-color: #cd5888;
+	background-color: #347f8e;
 }
 
 .btn {

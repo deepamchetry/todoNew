@@ -18,6 +18,7 @@ export default function Today({ list, remove }) {
     })
     return (
         <div>
+            <h1>TODAY</h1>
             <ListRender filteredList={filteredList} remove={remove} />
         </div>
     )
