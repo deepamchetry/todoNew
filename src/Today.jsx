@@ -1,7 +1,8 @@
 import React from 'react'
 import ListRender from './ListRender';
+import styles from './Today.module.css'
 
-export default function Today({ list }) {
+export default function Today({ list, remove }) {
     const date = new Date()
     const filteredList = list.filter((task) => {
         if (date.getFullYear() !== task.date.getFullYear()) {
@@ -17,7 +18,7 @@ export default function Today({ list }) {
     })
     return (
         <div>
-            <ListRender filteredList={filteredList} />
+            <ListRender filteredList={filteredList} remove={remove} />
         </div>
     )
 }

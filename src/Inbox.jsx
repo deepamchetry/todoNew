@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 import styles from './Inbox.module.css'
 
-export default function Inbox({ list, append }) {
+export default function Inbox({ list, append, remove }) {
     const [newTask, setNewTask] = useState(false)
     const titleRef = useRef("")
     const calendarRef = useRef("")
@@ -29,6 +29,11 @@ export default function Inbox({ list, append }) {
         e.preventDefault()
         setNewTask(false)
     }
+
+    const removeHandler = (removeIndex) => {
+        remove(removeIndex)
+    }
+
     return (
         <div>
             <h2>Inbox</h2>
@@ -51,7 +56,7 @@ export default function Inbox({ list, append }) {
                     return (
                         <div key={listItem.number} className={styles.todoItem}>
                             <div>
-                                <input type="checkbox" name="" id="" />
+                                <input type="checkbox" name="" id="" onChange={() => removeHandler(listItem.number)} />
                                 <span>{listItem.title}</span>
                             </div>
                             <div>({listItem.date.toLocaleDateString()})</div>

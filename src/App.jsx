@@ -10,10 +10,10 @@ function App() {
     <div className={styles.container}>
       <Header />
       <div className="row">
-        <div className="col-md-2">
+        <div className="col-md-4">
           <Sidenav change={setActive} />
         </div>
-        <div className="col-md-10">
+        <div className="col-md-8">
           <MainSection active={active} />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import ListRender from './ListRender';
 
-export default function Next7Days({ list }) {
+export default function Next7Days({ list, remove }) {
     const date = new Date()
     const filteredList = list.filter((task) => {
         const diffTime = task.date - date // return milliseconds
@@ -12,7 +12,7 @@ export default function Next7Days({ list }) {
     })
     return (
         <div>
-            <ListRender filteredList={filteredList} />
+            <ListRender filteredList={filteredList} remove={remove} />
             {/* {console.log(filteredList)} */}
         </div>
     )
