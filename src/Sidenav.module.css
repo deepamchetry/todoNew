@@ -1,0 +1,39 @@
+ul {
+	list-style-type: none;
+	border: 2px solid #913175;
+	border-radius: 1rem;
+	padding: 0.5rem;
+}
+li {
+	margin: 0.5rem 0;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: 0.3s;
+}
+
+li:hover {
+	border-color: #cd5888;
+}
+
+.active {
+	background-color: #cd5888;
+}
+
+.btn {
+	background-color: #dc3545;
+	color: #e9e8e8;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	transition: 0.3s;
+	margin: 1rem;
+	margin-left: 0;
+	width: 100%;
+}
+
+.btn:hover {
+	background-color: #db4554;
+	transform: translateY(-2px);
+}

@@ -1,0 +1,58 @@
+.btn {
+	background-color: #913175;
+	color: #e9e8e8;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	transition: 0.3s;
+	margin: 1rem;
+	margin-left: 0;
+}
+
+.btnCancel {
+	background-color: transparent;
+	color: #e9e8e8;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	transition: 0.3s;
+	margin: 1rem;
+	margin-left: 0;
+	border: 1px solid #913175;
+}
+.btn:hover,
+.btnCancel:hover {
+	background-color: #cd5888;
+	transform: translateY(-2px);
+}
+
+input {
+	outline: none;
+	border: none;
+	margin-right: 1rem;
+	border: 5px solid #20262e;
+}
+
+input:focus {
+	border-color: #913175;
+}
+
+.todoContainer {
+	display: flex;
+	flex-direction: column;
+	width: min(100%, 500px);
+}
+.todoItem {
+	padding: 1rem;
+	background-color: #e9e8e8;
+	color: #333333;
+	margin: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	transition: 0.3s;
+}
+
+.todoItem:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 5px #e9e8e8aa;
+}
